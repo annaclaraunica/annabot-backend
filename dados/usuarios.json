@@ -1,0 +1,6 @@
+[
+    { "usuario": "cliente1", "senha": "1234", "tipo": "cliente" },
+    { "usuario": "modelo1", "senha": "abcd", "tipo": "modelo" },
+    { "usuario": "admin", "senha": "admin123", "tipo": "admin" }
+  ]
+  

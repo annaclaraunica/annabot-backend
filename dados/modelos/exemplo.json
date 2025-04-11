@@ -1,0 +1,19 @@
+{
+  "id": "m1",
+  "nome": "Anna Clara",
+  "descricao": "🔥 Especialista em fotos exclusivas e chamadas de vídeo picantes.",
+  "foto": "https://link-da-imagem.com/ana.jpg",
+  "precos": {
+    "foto": "R$ 10,00",
+    "vídeo": "R$ 20,00",
+    "chamada": "R$ 5,00/min"
+  },
+  "contato": "https://wa.me/556199804378",
+  "divulgacao": {
+    "ativo": true,
+    "horarios": ["10:00", "14:00", "20:00"],
+    "mensagem": "✨ Conheça Anna Clara! Entre em contato para conteúdos exclusivos!",
+    "midia": "https://link-da-imagem.com/banner-ana.jpg",
+    "tipo": "foto"
+  }
+}

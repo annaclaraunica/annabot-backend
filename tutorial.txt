@@ -1,0 +1,33 @@
+MÉTODO DE INICIALIZAÇÃO VIA TERMUX
+
+↬ termux-setup-storage (Libera o acesso do app aos arquivos do telefone)
+
+↬ cd /storage/downloads/AnnaBot (Acessa a pasta do bot nos seus arquivos)
+
+↬ sh install.sh (Ativa o arquivo responsavél pela intalção das dependencias do bot)
+
+↬ sh start.sh ou node index.js (Ativa o arquivo responsavél pela inicialização do bot)
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+MÉTODO DE INICIALIZAÇÃO VIA CMD (WINDOWS)
+
+↬ABRA SEU GERENCIADOR DE ARQUIVO, VA NA PASTA DO BOT E ONDE ESTIVER DIRETOR, CLICA LA E ESCREVE CMD (DIREITORIO É ALGO DO TIPO C:\user\downloads\AnnaBot)
+
+↬NO TERMINAL DIGITE "node ." ou "node index.js"
+
+↬APÓS ISSO, AGUARDA O CARREGAMENTO E COLOCA O NUMERO QUE VOCÊ QUEIRA LIGAR O BOT EM FORMATO INTERNACIONAL (EX: +556692207953)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FUNCIONALIDADES DO BOT (COMO UTILIZAR)
+
+1 - COMO ADICIONAR FOTOS E LEGENDAS: UTILIZE O COMANDO !addfoto <link da imagem> <legenda>, para realizar quebras de linha use "\n". Cada \n equivale à pular uma linha no texto. Veja aqui um exemplo https://files.catbox.moe/l8g5wy.jpg
+
+2 - COMO ADICIONAR PARCEIRAS: utilize o comando !addparecira <numero em formato nacional>
+
+3 - COMO ADICIONAR USUARIOS NA LISTA NEGRA: utilize o comando !addlista <numero em fotmato nacional>

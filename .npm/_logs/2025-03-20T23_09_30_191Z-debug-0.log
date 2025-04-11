@@ -1,0 +1,587 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.6.7
+2 info using node@v18.17.0
+3 timing npm:load:whichnode Completed in 6ms
+4 timing config:load:defaults Completed in 5ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 7ms
+6 timing config:load:builtin Completed in 7ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 13ms
+10 timing config:load:file:/home/container/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 35ms
+16 timing npm:load:configload Completed in 35ms
+17 timing npm:load:mkdirpcache Completed in 2ms
+18 timing npm:load:mkdirplogs Completed in 1ms
+19 verbose title npm i
+20 verbose argv "i"
+21 timing npm:load:setTitle Completed in 2ms
+22 timing config:load:flatten Completed in 4ms
+23 timing npm:load:display Completed in 5ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2025-03-20T23_09_30_191Z-
+25 verbose logfile /home/container/.npm/_logs/2025-03-20T23_09_30_191Z-debug-0.log
+26 timing npm:load:logFile Completed in 14ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 69ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile done cleaning log files
+32 timing idealTree:init Completed in 478ms
+33 timing idealTree:userRequests Completed in 0ms
+34 silly idealTree buildDeps
+35 timing idealTree:#root Completed in 1ms
+36 timing idealTree:buildDeps Completed in 3ms
+37 timing idealTree:fixDepFlags Completed in 1ms
+38 warn EBADENGINE Unsupported engine {
+38 warn EBADENGINE   package: '@typescript-eslint/eslint-plugin@7.18.0',
+38 warn EBADENGINE   required: { node: '^18.18.0 || >=20.0.0' },
+38 warn EBADENGINE   current: { node: 'v18.17.0', npm: '9.6.7' }
+38 warn EBADENGINE }
+39 warn EBADENGINE Unsupported engine {
+39 warn EBADENGINE   package: '@typescript-eslint/parser@7.18.0',
+39 warn EBADENGINE   required: { node: '^18.18.0 || >=20.0.0' },
+39 warn EBADENGINE   current: { node: 'v18.17.0', npm: '9.6.7' }
+39 warn EBADENGINE }
+40 warn EBADENGINE Unsupported engine {
+40 warn EBADENGINE   package: '@typescript-eslint/scope-manager@7.18.0',
+40 warn EBADENGINE   required: { node: '^18.18.0 || >=20.0.0' },
+40 warn EBADENGINE   current: { node: 'v18.17.0', npm: '9.6.7' }
+40 warn EBADENGINE }
+41 warn EBADENGINE Unsupported engine {
+41 warn EBADENGINE   package: '@typescript-eslint/type-utils@7.18.0',
+41 warn EBADENGINE   required: { node: '^18.18.0 || >=20.0.0' },
+41 warn EBADENGINE   current: { node: 'v18.17.0', npm: '9.6.7' }
+41 warn EBADENGINE }
+42 warn EBADENGINE Unsupported engine {
+42 warn EBADENGINE   package: '@typescript-eslint/types@7.18.0',
+42 warn EBADENGINE   required: { node: '^18.18.0 || >=20.0.0' },
+42 warn EBADENGINE   current: { node: 'v18.17.0', npm: '9.6.7' }
+42 warn EBADENGINE }
+43 warn EBADENGINE Unsupported engine {
+43 warn EBADENGINE   package: '@typescript-eslint/typescript-estree@7.18.0',
+43 warn EBADENGINE   required: { node: '^18.18.0 || >=20.0.0' },
+43 warn EBADENGINE   current: { node: 'v18.17.0', npm: '9.6.7' }
+43 warn EBADENGINE }
+44 warn EBADENGINE Unsupported engine {
+44 warn EBADENGINE   package: '@typescript-eslint/utils@7.18.0',
+44 warn EBADENGINE   required: { node: '^18.18.0 || >=20.0.0' },
+44 warn EBADENGINE   current: { node: 'v18.17.0', npm: '9.6.7' }
+44 warn EBADENGINE }
+45 warn EBADENGINE Unsupported engine {
+45 warn EBADENGINE   package: '@typescript-eslint/visitor-keys@7.18.0',
+45 warn EBADENGINE   required: { node: '^18.18.0 || >=20.0.0' },
+45 warn EBADENGINE   current: { node: 'v18.17.0', npm: '9.6.7' }
+45 warn EBADENGINE }
+46 timing idealTree Completed in 507ms
+47 timing arborist:ctor Completed in 1ms
+48 timing reify:loadTrees Completed in 746ms
+49 timing reify:diffTrees Completed in 14ms
+50 silly reify moves {}
+51 timing reify:retireShallow Completed in 1ms
+52 timing reify:createSparse Completed in 1ms
+53 timing reify:loadBundles Completed in 0ms
+54 silly audit bulk request {
+54 silly audit   '@adiwajshing/keyed-db': [ '0.2.4' ],
+54 silly audit   '@bufbuild/protobuf': [ '2.2.3' ],
+54 silly audit   '@eshaz/web-worker': [ '1.2.2' ],
+54 silly audit   '@eslint-community/eslint-utils': [ '4.4.1' ],
+54 silly audit   '@eslint-community/regexpp': [ '4.12.1' ],
+54 silly audit   '@eslint/eslintrc': [ '2.1.4' ],
+54 silly audit   'brace-expansion': [ '1.1.11', '2.0.1' ],
+54 silly audit   minimatch: [ '3.1.2', '9.0.5', '3.0.8' ],
+54 silly audit   '@eslint/js': [ '8.57.1' ],
+54 silly audit   '@fastify/busboy': [ '2.1.1' ],
+54 silly audit   '@hapi/boom': [ '9.1.4' ],
+54 silly audit   '@hapi/hoek': [ '9.3.0' ],
+54 silly audit   '@hiudyy/ytdl': [ '0.1.6' ],
+54 silly audit   '@humanwhocodes/config-array': [ '0.13.0' ],
+54 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+54 silly audit   '@humanwhocodes/object-schema': [ '2.0.3' ],
+54 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+54 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+54 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+54 silly audit   '@protobufjs/aspromise': [ '1.1.2' ],
+54 silly audit   '@protobufjs/base64': [ '1.1.2' ],
+54 silly audit   '@protobufjs/codegen': [ '2.0.4' ],
+54 silly audit   '@protobufjs/eventemitter': [ '1.1.0' ],
+54 silly audit   '@protobufjs/fetch': [ '1.1.0' ],
+54 silly audit   '@protobufjs/float': [ '1.0.2' ],
+54 silly audit   '@protobufjs/inquire': [ '1.1.0' ],
+54 silly audit   '@protobufjs/path': [ '1.1.2' ],
+54 silly audit   '@protobufjs/pool': [ '1.1.0' ],
+54 silly audit   '@protobufjs/utf8': [ '1.1.0' ],
+54 silly audit   '@sec-ant/readable-stream': [ '0.4.1' ],
+54 silly audit   '@thi.ng/bitstream': [ '2.4.7' ],
+54 silly audit   '@thi.ng/errors': [ '2.5.21' ],
+54 silly audit   '@tokenizer/token': [ '0.3.0' ],
+54 silly audit   '@tootallnate/once': [ '1.1.2' ],
+54 silly audit   '@types/long': [ '4.0.2' ],
+54 silly audit   '@types/node': [ '22.10.2', '10.17.60' ],
+54 silly audit   '@typescript-eslint/eslint-plugin': [ '7.18.0' ],
+54 silly audit   '@typescript-eslint/parser': [ '7.18.0' ],
+54 silly audit   '@typescript-eslint/scope-manager': [ '7.18.0' ],
+54 silly audit   '@typescript-eslint/type-utils': [ '7.18.0' ],
+54 silly audit   '@typescript-eslint/types': [ '7.18.0' ],
+54 silly audit   '@typescript-eslint/typescript-estree': [ '7.18.0' ],
+54 silly audit   '@typescript-eslint/utils': [ '7.18.0' ],
+54 silly audit   '@typescript-eslint/visitor-keys': [ '7.18.0' ],
+54 silly audit   '@ungap/structured-clone': [ '1.2.1' ],
+54 silly audit   '@wasm-audio-decoders/common': [ '9.0.5' ],
+54 silly audit   '@wasm-audio-decoders/flac': [ '0.2.5' ],
+54 silly audit   '@wasm-audio-decoders/ogg-vorbis': [ '0.1.16' ],
+54 silly audit   '@whiskeysockets/baileys': [ '6.7.9' ],
+54 silly audit   axios: [ '1.7.9', '0.24.0' ],
+54 silly audit   '@whiskeysockets/eslint-config': [ '1.0.0' ],
+54 silly audit   abab: [ '2.0.6' ],
+54 silly audit   acorn: [ '8.14.0', '7.4.1' ],
+54 silly audit   'acorn-globals': [ '6.0.0' ],
+54 silly audit   'acorn-jsx': [ '5.3.2' ],
+54 silly audit   'acorn-walk': [ '7.2.0' ],
+54 silly audit   'agent-base': [ '6.0.2' ],
+54 silly audit   ajv: [ '6.12.6' ],
+54 silly audit   'ansi-regex': [ '5.0.1', '2.1.1', '3.0.1' ],
+54 silly audit   'ansi-styles': [ '4.3.0' ],
+54 silly audit   argparse: [ '2.0.1' ],
+54 silly audit   'array-union': [ '2.1.0' ],
+54 silly audit   async: [ '0.2.10', '2.6.4' ],
+54 silly audit   'async-lock': [ '1.4.1' ],
+54 silly audit   'async.parallellimit': [ '0.5.2' ],
+54 silly audit   'async.util.eachoflimit': [ '0.5.2' ],
+54 silly audit   'async.util.isarray': [ '0.5.2' ],
+54 silly audit   'async.util.isarraylike': [ '0.5.2' ],
+54 silly audit   'async.util.keyiterator': [ '0.5.2' ],
+54 silly audit   'async.util.keys': [ '0.5.2' ],
+54 silly audit   'async.util.noop': [ '0.5.2' ],
+54 silly audit   'async.util.once': [ '0.5.2' ],
+54 silly audit   'async.util.onlyonce': [ '0.5.2' ],
+54 silly audit   'async.util.parallel': [ '0.5.2' ],
+54 silly audit   'async.util.restparam': [ '0.5.2' ],
+54 silly audit   asynckit: [ '0.4.0' ],
+54 silly audit   'atomic-sleep': [ '1.0.0' ],
+54 silly audit   'audio-buffer': [ '5.0.0' ],
+54 silly audit   'audio-decode': [ '2.2.2' ],
+54 silly audit   'audio-type': [ '2.2.1' ],
+54 silly audit   'awesome-phonenumber': [ '5.11.0' ],
+54 silly audit   'balanced-match': [ '1.0.2' ],
+54 silly audit   boolbase: [ '1.0.0' ],
+54 silly audit   boolstring: [ '1.0.2' ],
+54 silly audit   braces: [ '3.0.3' ],
+54 silly audit   'browser-process-hrtime': [ '1.0.0' ],
+54 silly audit   'cache-manager': [ '5.7.6' ],
+54 silly audit   callsites: [ '3.1.0' ],
+54 silly audit   cfonts: [ '3.3.0' ],
+54 silly audit   chalk: [ '4.1.2' ],
+54 silly audit   'supports-color': [ '7.2.0', '8.1.1' ],
+54 silly audit   cheerio: [ '1.0.0' ],
+54 silly audit   'cheerio-select': [ '2.1.0' ],
+54 silly audit   parse5: [ '7.2.1', '6.0.1' ],
+54 silly audit   'whatwg-mimetype': [ '4.0.0', '2.3.0' ],
+54 silly audit   child_process: [ '1.0.2' ],
+54 silly audit   'cli-color': [ '1.2.0' ],
+54 silly audit   clone: [ '2.1.2' ],
+54 silly audit   closewords: [ '2.1.2' ],
+54 silly audit   'fast-levenshtein': [ '3.0.0', '2.0.6' ],
+54 silly audit   'codec-parser': [ '2.5.0' ],
+54 silly audit   'color-convert': [ '2.0.1' ],
+54 silly audit   'color-name': [ '1.1.4' ],
+54 silly audit   colors: [ '1.4.0' ],
+54 silly audit   'combined-stream': [ '1.0.8' ],
+54 silly audit   'concat-map': [ '0.0.1' ],
+54 silly audit   'content-type': [ '1.0.5' ],
+54 silly audit   'cross-spawn': [ '7.0.6' ],
+54 silly audit   'css-select': [ '5.1.0' ],
+54 silly audit   'css-what': [ '6.1.0' ],
+54 silly audit   cssom: [ '0.4.4', '0.3.8' ],
+54 silly audit   cssstyle: [ '2.3.0' ],
+54 silly audit   'curve25519-js': [ '0.0.4' ],
+54 silly audit   d: [ '1.0.2' ],
+54 silly audit   dasu: [ '0.4.3' ],
+54 silly audit   'data-urls': [ '2.0.0' ],
+54 silly audit   debug: [ '4.4.0' ],
+54 silly audit   'decimal.js': [ '10.4.3' ],
+54 silly audit   'deep-is': [ '0.1.4' ],
+54 silly audit   'define-property': [ '1.0.0' ],
+54 silly audit   'delayed-stream': [ '1.0.0' ],
+54 silly audit   'dir-glob': [ '3.0.1' ],
+54 silly audit   doctrine: [ '3.0.0' ],
+54 silly audit   'dom-serializer': [ '2.0.0' ],
+54 silly audit   domelementtype: [ '2.3.0' ],
+54 silly audit   domexception: [ '2.0.1' ],
+54 silly audit   'webidl-conversions': [ '5.0.0', '3.0.1', '6.1.0' ],
+54 silly audit   domhandler: [ '5.0.3' ],
+54 silly audit   domutils: [ '3.2.1' ],
+54 silly audit   doublearray: [ '0.0.2' ],
+54 silly audit   duplexify: [ '4.1.3' ],
+54 silly audit   'encoding-sniffer': [ '0.2.0' ],
+54 silly audit   'iconv-lite': [ '0.6.3', '0.4.24' ],
+54 silly audit   'whatwg-encoding': [ '3.1.1', '1.0.5' ],
+54 silly audit   'end-of-stream': [ '1.4.4' ],
+54 silly audit   entities: [ '4.5.0' ],
+54 silly audit   'es5-ext': [ '0.10.64' ],
+54 silly audit   'es6-iterator': [ '2.0.3' ],
+54 silly audit   'es6-symbol': [ '3.1.4' ],
+54 silly audit   'es6-weak-map': [ '2.0.3' ],
+54 silly audit   'escape-string-regexp': [ '4.0.0' ],
+54 silly audit   escodegen: [ '2.1.0' ],
+54 silly audit   eslint: [ '8.57.1' ],
+54 silly audit   'eslint-plugin-simple-import-sort': [ '12.1.1' ],
+54 silly audit   'eslint-scope': [ '7.2.2' ],
+54 silly audit   'eslint-visitor-keys': [ '3.4.3' ],
+54 silly audit   esniff: [ '2.0.1' ],
+54 silly audit   espree: [ '9.6.1' ],
+54 silly audit   esprima: [ '4.0.1' ],
+54 silly audit   esquery: [ '1.6.0' ],
+54 silly audit   esrecurse: [ '4.3.0' ],
+54 silly audit   estraverse: [ '5.3.0' ],
+54 silly audit   esutils: [ '2.0.3' ],
+54 silly audit   'event-emitter': [ '0.3.5' ],
+54 silly audit   eventemitter3: [ '5.0.1' ],
+54 silly audit   ext: [ '1.7.0' ],
+54 silly audit   'fast-deep-equal': [ '3.1.3' ],
+54 silly audit   'fast-glob': [ '3.3.2' ],
+54 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+54 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+54 silly audit   'fast-redact': [ '3.5.0' ],
+54 silly audit   'fastest-levenshtein': [ '1.0.16' ],
+54 silly audit   fastq: [ '1.18.0' ],
+54 silly audit   'file-entry-cache': [ '6.0.1' ],
+54 silly audit   'file-type': [ '19.6.0', '16.5.4' ],
+54 silly audit   'fill-range': [ '7.1.1' ],
+54 silly audit   'find-up': [ '5.0.0' ],
+54 silly audit   'flat-cache': [ '3.2.0' ],
+54 silly audit   flatted: [ '3.3.2' ],
+54 silly audit   'fluent-ffmpeg': [ '2.1.3' ],
+54 silly audit   which: [ '1.3.1', '2.0.2' ],
+54 silly audit   'follow-redirects': [ '1.15.9' ],
+54 silly audit   'form-data': [ '4.0.1', '3.0.2' ],
+54 silly audit   fs: [ '0.0.1-security' ],
+54 silly audit   'fs.realpath': [ '1.0.0' ],
+54 silly audit   'function-bind': [ '1.1.2' ],
+54 silly audit   'futoin-hkdf': [ '1.5.3' ],
+54 silly audit   'get-stream': [ '9.0.1' ],
+54 silly audit   glob: [ '7.2.3' ],
+54 silly audit   globals: [ '13.24.0' ],
+54 silly audit   globby: [ '11.1.0' ],
+54 silly audit   gpti: [ '2.1.8' ],
+54 silly audit   graphemer: [ '1.4.0' ],
+54 silly audit   'has-flag': [ '4.0.0' ],
+54 silly audit   hasown: [ '2.0.2' ],
+54 silly audit   'html-encoding-sniffer': [ '2.0.1' ],
+54 silly audit   htmlparser2: [ '9.1.0' ],
+54 silly audit   'http-proxy-agent': [ '4.0.1' ],
+54 silly audit   'https-proxy-agent': [ '5.0.1' ],
+54 silly audit   'human-time': [ '0.0.2' ],
+54 silly audit   ieee754: [ '1.2.1' ],
+54 silly audit   ignore: [ '5.3.2' ],
+54 silly audit   'import-fresh': [ '3.3.0' ],
+54 silly audit   imurmurhash: [ '0.1.4' ],
+54 silly audit   inflight: [ '1.0.6' ],
+54 silly audit   inherits: [ '2.0.4', '2.0.3' ],
+54 silly audit   'is-accessor-descriptor': [ '1.0.1' ],
+54 silly audit   'is-buffer': [ '1.1.6' ],
+54 silly audit   'is-data-descriptor': [ '1.0.1' ],
+54 silly audit   'is-descriptor': [ '1.0.3' ],
+54 silly audit   'is-extglob': [ '2.1.1' ],
+54 silly audit   'is-glob': [ '4.0.3' ],
+54 silly audit   'is-number': [ '7.0.0', '3.0.0' ],
+54 silly audit   'is-path-inside': [ '3.0.3' ],
+54 silly audit   'is-potential-custom-element-name': [ '1.0.1' ],
+54 silly audit   'is-promise': [ '2.2.2' ],
+54 silly audit   'is-stream': [ '4.0.1' ],
+54 silly audit   isexe: [ '2.0.0' ],
+54 silly audit   'jaro-winkler': [ '0.2.8' ],
+54 silly audit   jintr: [ '3.2.0' ],
+54 silly audit   'js-yaml': [ '4.1.0' ],
+54 silly audit   jsdom: [ '16.7.0' ],
+54 silly audit   ws: [ '7.5.10', '8.18.0' ],
+54 silly audit   'json-buffer': [ '3.0.1' ],
+54 silly audit   'json-schema-traverse': [ '0.4.1' ],
+54 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+54 silly audit   'jsonpath-plus': [ '5.0.7' ],
+54 silly audit   keypress: [ '0.2.1' ],
+54 silly audit   keyv: [ '4.5.4' ],
+54 silly audit   'kind-of': [ '3.2.2' ],
+54 silly audit   kuromoji: [ '0.1.2' ],
+54 silly audit   levn: [ '0.4.1' ],
+54 silly audit   'libphonenumber-js': [ '1.11.17' ],
+54 silly audit   '@whiskeysockets/libsignal-node': [ '2.0.1' ],
+54 silly audit   long: [ '4.0.0', '5.2.3' ],
+54 silly audit   protobufjs: [ '6.8.8', '7.4.0' ],
+54 silly audit   'locate-path': [ '6.0.0' ],
+54 silly audit   lodash: [ '4.17.21' ],
+54 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+54 silly audit   'lodash.merge': [ '4.6.2' ],
+54 silly audit   'lru-cache': [ '10.4.3' ],
+54 silly audit   'lru-queue': [ '0.1.0' ],
+54 silly audit   m3u8stream: [ '0.8.6' ],
+54 silly audit   'media-typer': [ '1.1.0' ],
+54 silly audit   memoizee: [ '0.4.17' ],
+54 silly audit   merge2: [ '1.4.1' ],
+54 silly audit   micromatch: [ '4.0.8' ],
+54 silly audit   mime: [ '1.6.0' ],
+54 silly audit   'mime-db': [ '1.52.0' ],
+54 silly audit   'mime-types': [ '2.1.35' ],
+54 silly audit   miniget: [ '4.2.3' ],
+54 silly audit   minimist: [ '1.2.8' ],
+54 silly audit   moment: [ '2.30.1' ],
+54 silly audit   'moment-timezone': [ '0.5.46' ],
+54 silly audit   'mpg123-decoder': [ '1.0.0' ],
+54 silly audit   ms: [ '2.1.3' ],
+54 silly audit   'music-metadata': [ '7.14.0' ],
+54 silly audit   'peek-readable': [ '4.1.0', '5.3.1' ],
+54 silly audit   strtok3: [ '6.3.0', '9.1.1' ],
+54 silly audit   'token-types': [ '4.2.1', '6.0.0' ],
+54 silly audit   'natural-compare': [ '1.4.0' ],
+54 silly audit   'nayan-media-downloader': [ '0.0.1-security' ],
+54 silly audit   'next-tick': [ '1.1.0' ],
+54 silly audit   'node-cache': [ '5.1.2' ],
+54 silly audit   'node-fetch': [ '2.7.0' ],
+54 silly audit   tr46: [ '0.0.3', '2.1.0' ],
+54 silly audit   'whatwg-url': [ '5.0.0', '8.7.0' ],
+54 silly audit   'node-fzf': [ '0.5.3' ],
+54 silly audit   'is-fullwidth-code-point': [ '2.0.0' ],
+54 silly audit   'string-width': [ '2.1.1' ],
+54 silly audit   'strip-ansi': [ '4.0.0', '6.0.1' ],
+54 silly audit   'node-wav': [ '0.0.2' ],
+54 silly audit   'node-webpmux': [ '3.1.1' ],
+54 silly audit   'nth-check': [ '2.1.1' ],
+54 silly audit   nwsapi: [ '2.2.16' ],
+54 silly audit   'ogg-opus-decoder': [ '1.6.14' ],
+54 silly audit   'on-exit-leak-free': [ '0.2.0' ],
+54 silly audit   once: [ '1.4.0' ],
+54 silly audit   optionator: [ '0.9.4' ],
+54 silly audit   'opus-decoder': [ '0.7.7' ],
+54 silly audit   os: [ '0.1.2' ],
+54 silly audit   'p-limit': [ '3.1.0' ],
+54 silly audit   'p-locate': [ '5.0.0' ],
+54 silly audit   'parent-module': [ '1.0.1' ],
+54 silly audit   'parse5-htmlparser2-tree-adapter': [ '7.1.0' ],
+54 silly audit   'parse5-parser-stream': [ '7.1.2' ],
+54 silly audit   path: [ '0.12.7' ],
+54 silly audit   'path-exists': [ '4.0.0' ],
+54 silly audit   'path-is-absolute': [ '1.0.1' ],
+54 silly audit   'path-key': [ '3.1.1' ],
+54 silly audit   'path-type': [ '4.0.0' ],
+54 silly audit   'performance-now': [ '2.1.0' ],
+54 silly audit   picomatch: [ '2.3.1' ],
+54 silly audit   pino: [ '7.11.0' ],
+54 silly audit   'pino-abstract-transport': [ '0.5.0' ],
+54 silly audit   'pino-std-serializers': [ '4.0.0' ],
+54 silly audit   'prelude-ls': [ '1.2.1' ],
+54 silly audit   process: [ '0.11.10' ],
+54 silly audit   'process-warning': [ '1.0.0' ],
+54 silly audit   'promise-coalesce': [ '1.1.2' ],
+54 silly audit   'proxy-from-env': [ '1.1.0' ],
+54 silly audit   psl: [ '1.15.0' ],
+54 silly audit   punycode: [ '2.3.1' ],
+54 silly audit   'qoa-format': [ '1.0.1' ],
+54 silly audit   'qrcode-terminal': [ '0.12.0' ],
+54 silly audit   querystringify: [ '2.2.0' ],
+54 silly audit   'queue-microtask': [ '1.2.3' ],
+54 silly audit   'quick-format-unescaped': [ '4.0.4' ],
+54 silly audit   'readable-stream': [ '3.6.2' ],
+54 silly audit   'readable-web-to-node-stream': [ '3.0.2' ],
+54 silly audit   'real-require': [ '0.1.0' ],
+54 silly audit   redstar: [ '0.0.2' ],
+54 silly audit   'requires-port': [ '1.0.0' ],
+54 silly audit   'resolve-from': [ '4.0.0' ],
+54 silly audit   reusify: [ '1.0.4' ],
+54 silly audit   rimraf: [ '3.0.2' ],
+54 silly audit   'run-parallel': [ '1.2.0' ],
+54 silly audit   'safe-buffer': [ '5.2.1' ],
+54 silly audit   'safe-stable-stringify': [ '2.5.0' ],
+54 silly audit   'safer-buffer': [ '2.1.2' ],
+54 silly audit   sax: [ '1.4.1' ],
+54 silly audit   saxes: [ '5.0.1' ],
+54 silly audit   semver: [ '7.6.3' ],
+54 silly audit   'shebang-command': [ '2.0.0' ],
+54 silly audit   'shebang-regex': [ '3.0.0' ],
+54 silly audit   'simple-yenc': [ '1.0.4' ],
+54 silly audit   slash: [ '3.0.0' ],
+54 silly audit   'sonic-boom': [ '2.8.0' ],
+54 silly audit   'source-map': [ '0.6.1' ],
+54 silly audit   split2: [ '4.2.0' ],
+54 silly audit   'stream-shift': [ '1.0.3' ],
+54 silly audit   string_decoder: [ '1.3.0' ],
+54 silly audit   'strip-json-comments': [ '3.1.1' ],
+54 silly audit   'symbol-tree': [ '3.2.4' ],
+54 silly audit   'text-table': [ '0.2.0' ],
+54 silly audit   'thread-stream': [ '0.15.2' ],
+54 silly audit   'timers-ext': [ '0.1.8' ],
+54 silly audit   'to-regex-range': [ '5.0.1' ],
+54 silly audit   'tough-cookie': [ '4.1.4' ],
+54 silly audit   'ts-api-utils': [ '1.4.3' ],
+54 silly audit   tslib: [ '2.8.1' ],
+54 silly audit   ttys: [ '0.0.3' ],
+54 silly audit   type: [ '2.7.3' ],
+54 silly audit   'type-check': [ '0.4.0' ],
+54 silly audit   'type-fest': [ '0.20.2' ],
+54 silly audit   typescript: [ '5.7.2' ],
+54 silly audit   'uint8array-extras': [ '1.4.0' ],
+54 silly audit   undici: [ '6.21.0', '5.28.4' ],
+54 silly audit   'undici-types': [ '6.20.0' ],
+54 silly audit   universalify: [ '0.2.0' ],
+54 silly audit   'unlimited-ai': [ '5.0.5' ],
+54 silly audit   'uri-js': [ '4.4.1' ],
+54 silly audit   'url-parse': [ '1.5.10' ],
+54 silly audit   util: [ '0.10.4' ],
+54 silly audit   'util-deprecate': [ '1.0.2' ],
+54 silly audit   uuid: [ '10.0.0' ],
+54 silly audit   'w3c-hr-time': [ '1.0.2' ],
+54 silly audit   'w3c-xmlserializer': [ '2.0.0' ],
+54 silly audit   wanakana: [ '5.3.1' ],
+54 silly audit   'window-size': [ '1.1.1' ],
+54 silly audit   'word-wrap': [ '1.2.5' ],
+54 silly audit   wrappy: [ '1.0.2' ],
+54 silly audit   'xml-name-validator': [ '3.0.0' ],
+54 silly audit   xmlchars: [ '2.2.0' ],
+54 silly audit   'yocto-queue': [ '0.1.0' ],
+54 silly audit   'youtube-yts': [ '2.0.0' ],
+54 silly audit   'youtubedl-core': [ '4.11.7' ],
+54 silly audit   'youtubei.js': [ '12.2.0' ],
+54 silly audit   'yt-search': [ '2.12.1' ],
+54 silly audit   'ytdl-core': [ '4.11.5' ],
+54 silly audit   zlibjs: [ '0.3.1' ]
+54 silly audit }
+55 timing reify:unpack Completed in 5ms
+56 timing reify:unretire Completed in 0ms
+57 timing build:queue Completed in 0ms
+58 timing build:deps Completed in 1ms
+59 timing build Completed in 1ms
+60 timing reify:build Completed in 1ms
+61 timing reify:trash Completed in 0ms
+62 timing reify:save Completed in 171ms
+63 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 648ms
+64 timing auditReport:getReport Completed in 660ms
+65 silly audit report {
+65 silly audit report   axios: [
+65 silly audit report     {
+65 silly audit report       id: 1102472,
+65 silly audit report       url: 'https://github.com/advisories/GHSA-jr5f-v2jv-69x6',
+65 silly audit report       title: 'axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL',
+65 silly audit report       severity: 'high',
+65 silly audit report       vulnerable_versions: '<1.8.2',
+65 silly audit report       cwe: [Array],
+65 silly audit report       cvss: [Object]
+65 silly audit report     },
+65 silly audit report     {
+65 silly audit report       id: 1097679,
+65 silly audit report       url: 'https://github.com/advisories/GHSA-wf5p-g6vw-rhxx',
+65 silly audit report       title: 'Axios Cross-Site Request Forgery Vulnerability',
+65 silly audit report       severity: 'moderate',
+65 silly audit report       vulnerable_versions: '>=0.8.1 <0.28.0',
+65 silly audit report       cwe: [Array],
+65 silly audit report       cvss: [Object]
+65 silly audit report     }
+65 silly audit report   ],
+65 silly audit report   'jsonpath-plus': [
+65 silly audit report     {
+65 silly audit report       id: 1102423,
+65 silly audit report       url: 'https://github.com/advisories/GHSA-pppg-cpfq-h7wr',
+65 silly audit report       title: 'JSONPath Plus Remote Code Execution (RCE) Vulnerability',
+65 silly audit report       severity: 'critical',
+65 silly audit report       vulnerable_versions: '<10.2.0',
+65 silly audit report       cwe: [Array],
+65 silly audit report       cvss: [Object]
+65 silly audit report     },
+65 silly audit report     {
+65 silly audit report       id: 1102895,
+65 silly audit report       url: 'https://github.com/advisories/GHSA-hw8r-x6gr-5gjp',
+65 silly audit report       title: 'JSONPath Plus allows Remote Code Execution',
+65 silly audit report       severity: 'high',
+65 silly audit report       vulnerable_versions: '<10.3.0',
+65 silly audit report       cwe: [Array],
+65 silly audit report       cvss: [Object]
+65 silly audit report     }
+65 silly audit report   ],
+65 silly audit report   undici: [
+65 silly audit report     {
+65 silly audit report       id: 1101609,
+65 silly audit report       url: 'https://github.com/advisories/GHSA-c76h-2ccp-4975',
+65 silly audit report       title: 'Use of Insufficiently Random Values in undici',
+65 silly audit report       severity: 'moderate',
+65 silly audit report       vulnerable_versions: '>=6.0.0 <6.21.1',
+65 silly audit report       cwe: [Array],
+65 silly audit report       cvss: [Object]
+65 silly audit report     },
+65 silly audit report     {
+65 silly audit report       id: 1101610,
+65 silly audit report       url: 'https://github.com/advisories/GHSA-c76h-2ccp-4975',
+65 silly audit report       title: 'Use of Insufficiently Random Values in undici',
+65 silly audit report       severity: 'moderate',
+65 silly audit report       vulnerable_versions: '>=4.5.0 <5.28.5',
+65 silly audit report       cwe: [Array],
+65 silly audit report       cvss: [Object]
+65 silly audit report     }
+65 silly audit report   ]
+65 silly audit report }
+66 timing metavuln:cache:get:security-advisory:axios:4S5/2vnNOr176OAENhlnTM27cDGbeorlVQNOFxS6UGp4SH8mWhMBlGN31jmI8wVL1VIQ5MwMgvx/yd71vtfLXg== Completed in 40ms
+67 timing metavuln:cache:get:security-advisory:axios:Oi6B9AucyObhJnAMQYb3eyigkQbiqrclLJ09eDn16DgUHYfFa+9WQjxUGArwnF1cWOy0gbdKMrAbkp8xW8Fwkg== Completed in 37ms
+68 timing metavuln:cache:get:security-advisory:jsonpath-plus:Ljw8FtOEawkrr0jBjZYIj2iMMCJA7+fV7wMaaiBcwaNcG9wAMhHvINQuUaqG0+6deVTzJm9EUbKkV2tGJBpgqA== Completed in 37ms
+69 timing metavuln:cache:get:security-advisory:jsonpath-plus:lfSJ03ezGZ9d0o5nii0kYKu3uK1V2F6NBJUNr8zZ0bDMhpNv+5/Qi9qgi9r5w/G2XPeKdwrfcNmaHnfbQxA4Jg== Completed in 36ms
+70 timing metavuln:cache:get:security-advisory:undici:XitxJ4Zh8dZyUzwIp32XK5TIL9OdfYp4OLkQu17Fb6V62hioEjRLk+RmX5lVMilL4x38yomwx6HCKVTK2aOZCw== Completed in 36ms
+71 timing metavuln:cache:get:security-advisory:undici:b3oQ3g+hj5SMgnSURhB4kIqOkHt2IsYm2a0haI1yHGuf1J25TaGtftXhEW1qa2Mh6Sh8mU/Zkap9kW71veIGgQ== Completed in 36ms
+72 http fetch GET 200 https://registry.npmjs.org/axios 139ms (cache updated)
+73 timing metavuln:packument:axios Completed in 147ms
+74 timing metavuln:load:security-advisory:axios:1102472 Completed in 2ms
+75 timing metavuln:calculate:security-advisory:axios:1102472 Completed in 150ms
+76 timing metavuln:load:security-advisory:axios:1097679 Completed in 1ms
+77 timing metavuln:calculate:security-advisory:axios:1097679 Completed in 147ms
+78 http fetch GET 200 https://registry.npmjs.org/jsonpath-plus 201ms (cache updated)
+79 timing metavuln:packument:jsonpath-plus Completed in 204ms
+80 timing metavuln:load:security-advisory:jsonpath-plus:1102423 Completed in 0ms
+81 timing metavuln:calculate:security-advisory:jsonpath-plus:1102423 Completed in 205ms
+82 timing metavuln:load:security-advisory:jsonpath-plus:1102895 Completed in 1ms
+83 timing metavuln:calculate:security-advisory:jsonpath-plus:1102895 Completed in 205ms
+84 http fetch GET 200 https://registry.npmjs.org/undici 758ms (cache updated)
+85 timing metavuln:packument:undici Completed in 766ms
+86 timing metavuln:load:security-advisory:undici:1101609 Completed in 1ms
+87 timing metavuln:calculate:security-advisory:undici:1101609 Completed in 768ms
+88 timing metavuln:load:security-advisory:undici:1101610 Completed in 4ms
+89 timing metavuln:calculate:security-advisory:undici:1101610 Completed in 772ms
+90 timing metavuln:cache:get:security-advisory:gpti:49ddv8NFD+Dje1aLdD+5EQ2JOFNLd3AzpkZRAdXKXuqwy+loYrAtO1NJfPoj/ZvyceSImLkkzsw2qPn6vO0Q0w== Completed in 126ms
+91 timing metavuln:cache:get:security-advisory:unlimited-ai:9z9fY7Q0zmGhCjzQctczLoe/Uf/u+RdJCwgKGSJeLQdrzhSYFVEKERtf8+OhkUJTWxWiaaZcwUo5BCnIfK2e4Q== Completed in 124ms
+92 timing metavuln:cache:get:security-advisory:@whiskeysockets/baileys:2uIWChtJ9uI7xqk82rpFRnZgBQqm1XBg6o1cpcWv+hQNQwEbsPiZWMkYrsmXOnubrj8ZVrQBWSdF5R/i+0I/Vg== Completed in 136ms
+93 http fetch GET 200 https://registry.npmjs.org/@whiskeysockets%2fbaileys 309ms (cache updated)
+94 timing metavuln:packument:@whiskeysockets/baileys Completed in 311ms
+95 timing metavuln:load:security-advisory:@whiskeysockets/baileys:4S5/2vnNOr176OAENhlnTM27cDGbeorlVQNOFxS6UGp4SH8mWhMBlGN31jmI8wVL1VIQ5MwMgvx/yd71vtfLXg== Completed in 1ms
+96 timing metavuln:calculate:security-advisory:@whiskeysockets/baileys:4S5/2vnNOr176OAENhlnTM27cDGbeorlVQNOFxS6UGp4SH8mWhMBlGN31jmI8wVL1VIQ5MwMgvx/yd71vtfLXg== Completed in 312ms
+97 http fetch GET 200 https://registry.npmjs.org/unlimited-ai 888ms (cache updated)
+98 timing metavuln:packument:unlimited-ai Completed in 890ms
+99 timing metavuln:load:security-advisory:unlimited-ai:4S5/2vnNOr176OAENhlnTM27cDGbeorlVQNOFxS6UGp4SH8mWhMBlGN31jmI8wVL1VIQ5MwMgvx/yd71vtfLXg== Completed in 0ms
+100 timing metavuln:calculate:security-advisory:unlimited-ai:4S5/2vnNOr176OAENhlnTM27cDGbeorlVQNOFxS6UGp4SH8mWhMBlGN31jmI8wVL1VIQ5MwMgvx/yd71vtfLXg== Completed in 890ms
+101 http fetch GET 200 https://registry.npmjs.org/gpti 903ms (cache updated)
+102 timing metavuln:packument:gpti Completed in 905ms
+103 timing metavuln:load:security-advisory:gpti:4S5/2vnNOr176OAENhlnTM27cDGbeorlVQNOFxS6UGp4SH8mWhMBlGN31jmI8wVL1VIQ5MwMgvx/yd71vtfLXg== Completed in 1ms
+104 timing metavuln:calculate:security-advisory:gpti:4S5/2vnNOr176OAENhlnTM27cDGbeorlVQNOFxS6UGp4SH8mWhMBlGN31jmI8wVL1VIQ5MwMgvx/yd71vtfLXg== Completed in 906ms
+105 timing metavuln:cache:get:security-advisory:yt-search:OU0BlNTarrPfna4fMXoUupYR2xrZ2Up3ZgOSFbOUX+NtLietk1MQUt141kWMnudUcZhUk6KQAlP85dGFKSC9CQ== Completed in 23ms
+106 timing metavuln:cache:get:security-advisory:youtube-yts:kYRkB/JKSXfkWgLVWLn+75vpXgAwDAm23kU88ShK/y+ruG5XVoyNCC8b3qJYOQdmXwFtGrPjl/4Q86xlDbZdXA== Completed in 24ms
+107 http fetch GET 200 https://registry.npmjs.org/yt-search 292ms (cache updated)
+108 timing metavuln:packument:yt-search Completed in 295ms
+109 timing metavuln:load:security-advisory:yt-search:Ljw8FtOEawkrr0jBjZYIj2iMMCJA7+fV7wMaaiBcwaNcG9wAMhHvINQuUaqG0+6deVTzJm9EUbKkV2tGJBpgqA== Completed in 1ms
+110 timing metavuln:calculate:security-advisory:yt-search:Ljw8FtOEawkrr0jBjZYIj2iMMCJA7+fV7wMaaiBcwaNcG9wAMhHvINQuUaqG0+6deVTzJm9EUbKkV2tGJBpgqA== Completed in 296ms
+111 http fetch GET 200 https://registry.npmjs.org/youtube-yts 633ms (cache updated)
+112 timing metavuln:packument:youtube-yts Completed in 634ms
+113 timing metavuln:load:security-advisory:youtube-yts:Ljw8FtOEawkrr0jBjZYIj2iMMCJA7+fV7wMaaiBcwaNcG9wAMhHvINQuUaqG0+6deVTzJm9EUbKkV2tGJBpgqA== Completed in 0ms
+114 timing metavuln:calculate:security-advisory:youtube-yts:Ljw8FtOEawkrr0jBjZYIj2iMMCJA7+fV7wMaaiBcwaNcG9wAMhHvINQuUaqG0+6deVTzJm9EUbKkV2tGJBpgqA== Completed in 634ms
+115 timing metavuln:cache:get:security-advisory:cheerio:jHjuCpQEwrFfe6azQCmRwjSP4ydpmfBTG8i4uEOgGtTsdXIwyrPNVvi4ZhpZiNKT98d0wCC91dfPe0xvzi9n9g== Completed in 10ms
+116 http fetch GET 200 https://registry.npmjs.org/cheerio 58ms (cache updated)
+117 timing metavuln:packument:cheerio Completed in 61ms
+118 timing metavuln:load:security-advisory:cheerio:XitxJ4Zh8dZyUzwIp32XK5TIL9OdfYp4OLkQu17Fb6V62hioEjRLk+RmX5lVMilL4x38yomwx6HCKVTK2aOZCw== Completed in 1ms
+119 timing metavuln:calculate:security-advisory:cheerio:XitxJ4Zh8dZyUzwIp32XK5TIL9OdfYp4OLkQu17Fb6V62hioEjRLk+RmX5lVMilL4x38yomwx6HCKVTK2aOZCw== Completed in 62ms
+120 timing metavuln:cache:get:security-advisory:youtubei.js:7a+CNmSMWK8OVP5z7y8RcwJjY5Lw/U4NUjSJ6nppIOJY9fcqbSHmLT3iNmXhJpimQB62ZMmKn/RrZfFcMnUMJQ== Completed in 14ms
+121 http fetch GET 200 https://registry.npmjs.org/youtubei.js 623ms (cache updated)
+122 timing metavuln:packument:youtubei.js Completed in 631ms
+123 timing metavuln:load:security-advisory:youtubei.js:b3oQ3g+hj5SMgnSURhB4kIqOkHt2IsYm2a0haI1yHGuf1J25TaGtftXhEW1qa2Mh6Sh8mU/Zkap9kW71veIGgQ== Completed in 1ms
+124 timing metavuln:calculate:security-advisory:youtubei.js:b3oQ3g+hj5SMgnSURhB4kIqOkHt2IsYm2a0haI1yHGuf1J25TaGtftXhEW1qa2Mh6Sh8mU/Zkap9kW71veIGgQ== Completed in 633ms
+125 timing auditReport:init Completed in 3042ms
+126 timing reify:audit Completed in 3705ms
+127 timing reify Completed in 4477ms
+128 timing command:i Completed in 4530ms
+129 verbose exit 0
+130 timing npm Completed in 4946ms
+131 info ok
