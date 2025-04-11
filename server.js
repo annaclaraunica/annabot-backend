@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001; // importante para o Render
 app.use(cors());
 app.use(express.json());
 
@@ -15,12 +15,11 @@ const CLIENT_SECRET = "JqUpSkkmlM6nn6xPRMNpdGlOnTBRrJqIArzQvyDnBk2YX/iS8ExxaFhIE
 const usuariosPath = path.join(__dirname, "dados/usuarios.json");
 const clientesPath = path.join(__dirname, "dados/clientes");
 
-// Rota base
 app.get("/", (req, res) => {
-  res.send("✅ API LivePix v2 rodando!");
+  res.send("✅ API LivePix v2 rodando com sucesso!");
 });
 
-// Autenticação com LivePix OAuth2
+// OAuth2 com LivePix
 async function obterTokenLivePix() {
   const params = new URLSearchParams();
   params.append("grant_type", "client_credentials");
@@ -34,9 +33,11 @@ async function obterTokenLivePix() {
 // Login
 app.post("/login", (req, res) => {
   const { usuario, senha } = req.body;
-  if (!fs.existsSync(usuariosPath)) return res.status(404).json({ erro: "Usuários não encontrados" });
+  if (!fs.existsSync(usuariosPath)) return res.status(404).json({ erro: "Arquivo de usuários não encontrado." });
+
   const usuarios = JSON.parse(fs.readFileSync(usuariosPath));
   const user = usuarios.find(u => u.usuario === usuario && u.senha === senha);
+
   if (!user) return res.status(401).json({ erro: "Usuário ou senha inválidos" });
   res.json({ status: "ok", tipo: user.tipo, usuario: user.usuario });
 });
@@ -45,13 +46,18 @@ app.post("/login", (req, res) => {
 app.get("/saldo/:usuario", (req, res) => {
   const caminho = path.join(clientesPath, `${req.params.usuario}.json`);
   if (!fs.existsSync(caminho)) return res.json({ saldo: 0 });
+
   const dados = JSON.parse(fs.readFileSync(caminho));
   res.json({ saldo: dados.saldo || 0 });
 });
 
-// Geração de Pix usando LivePix v2
+// Geração de Pix
 app.post("/pix/gerar", async (req, res) => {
   const { usuario, valor } = req.body;
+
+  if (!usuario || !valor) {
+    return res.status(400).json({ erro: "Usuário e valor são obrigatórios" });
+  }
 
   try {
     const token = await obterTokenLivePix();
@@ -68,20 +74,38 @@ app.post("/pix/gerar", async (req, res) => {
       }
     });
 
+    console.log("✅ Pix gerado para:", usuario);
     res.json({
       status: "ok",
       pixUrl: resposta.data.data.redirectUrl,
       referencia: resposta.data.data.reference
     });
+
   } catch (err) {
-    console.error("Erro ao gerar cobrança:", err.response?.data || err.message);
+    console.error("❌ Erro ao gerar cobrança:", err.response?.data || err.message);
     res.status(500).json({ erro: "Erro ao gerar cobrança" });
   }
 });
 
-// Webhook Pix (futuro)
+// Webhook Pix para atualizar saldo
 app.post("/pix/webhook", (req, res) => {
-  res.json({ status: "ok" });
+  const { identificador, valor } = req.body;
+
+  if (!identificador || !valor) {
+    return res.status(400).json({ erro: "Webhook inválido" });
+  }
+
+  const filePath = path.join(clientesPath, `${identificador}.json`);
+  let cliente = { saldo: 0 };
+  if (fs.existsSync(filePath)) {
+    cliente = JSON.parse(fs.readFileSync(filePath));
+  }
+
+  cliente.saldo = (cliente.saldo || 0) + parseFloat(valor);
+  fs.writeFileSync(filePath, JSON.stringify(cliente, null, 2));
+
+  console.log(`💰 Saldo atualizado para ${identificador}: R$ ${cliente.saldo}`);
+  res.json({ status: "saldo atualizado" });
 });
 
 app.listen(PORT, () => {
